@@ -30,7 +30,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GH6-Ni-YIc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GH6-Ni-YIc">
                                 <rect key="frame" x="341" y="71" width="18" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -45,8 +45,8 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="21" minValue="0.0" maxValue="130" translatesAutoresizingMaskIntoConstraints="NO" id="0lL-Cu-m5M">
                                 <rect key="frame" x="78" y="66.5" width="255" height="31"/>
                             </slider>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="CC9-d7-fcJ">
-                                <rect key="frame" x="80" y="108" width="121" height="29"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="CC9-d7-fcJ">
+                                <rect key="frame" x="80" y="108.5" width="117" height="29"/>
                                 <segments>
                                     <segment title="Male"/>
                                     <segment title="Female"/>
@@ -58,8 +58,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Kyu-Dg-Od0">
-                                <rect key="frame" x="16" y="151" width="343" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NQM-Ei-Z5B">
+                                <rect key="frame" x="16" y="151.5" width="343" height="515.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -70,21 +70,24 @@
                         <constraints>
                             <constraint firstItem="CC9-d7-fcJ" firstAttribute="centerY" secondItem="lay-kF-u9D" secondAttribute="centerY" id="0M6-NE-RLL"/>
                             <constraint firstItem="rRu-wv-3e9" firstAttribute="top" secondItem="ho1-NN-6pp" secondAttribute="bottom" constant="20" id="7q9-Qx-acz"/>
+                            <constraint firstItem="NQM-Ei-Z5B" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="BoT-N2-Y1w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NQM-Ei-Z5B" secondAttribute="bottom" id="Dvy-Cg-VB4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="GH6-Ni-YIc" secondAttribute="trailing" id="Euh-eL-tvn"/>
                             <constraint firstItem="GH6-Ni-YIc" firstAttribute="leading" secondItem="0lL-Cu-m5M" secondAttribute="trailing" constant="10" id="KkU-K7-jK1"/>
                             <constraint firstItem="0lL-Cu-m5M" firstAttribute="centerY" secondItem="rRu-wv-3e9" secondAttribute="centerY" id="LBz-Y8-eeM"/>
                             <constraint firstItem="ho1-NN-6pp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="MzN-a1-pMl"/>
+                            <constraint firstItem="NQM-Ei-Z5B" firstAttribute="top" secondItem="CC9-d7-fcJ" secondAttribute="bottom" constant="15" id="Rvo-CO-PrZ"/>
                             <constraint firstItem="lay-kF-u9D" firstAttribute="top" secondItem="rRu-wv-3e9" secondAttribute="bottom" constant="20" id="Sc3-pn-gsB"/>
                             <constraint firstItem="0lL-Cu-m5M" firstAttribute="leading" secondItem="rRu-wv-3e9" secondAttribute="trailing" constant="10" id="Urb-tl-31Y"/>
                             <constraint firstAttribute="trailingMargin" secondItem="C5J-ze-DYG" secondAttribute="trailing" id="YtO-0O-sfv"/>
-                            <constraint firstItem="Kyu-Dg-Od0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bNP-av-gZk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NQM-Ei-Z5B" secondAttribute="trailing" id="cYF-N1-cUZ"/>
                             <constraint firstItem="lay-kF-u9D" firstAttribute="trailing" secondItem="rRu-wv-3e9" secondAttribute="trailing" id="gKs-tV-JlF"/>
+                            <constraint firstItem="CC9-d7-fcJ" firstAttribute="leading" secondItem="lay-kF-u9D" secondAttribute="trailing" constant="10" id="hg6-E1-uFE"/>
                             <constraint firstItem="rRu-wv-3e9" firstAttribute="trailing" secondItem="ho1-NN-6pp" secondAttribute="trailing" id="hx8-3w-K58"/>
                             <constraint firstItem="C5J-ze-DYG" firstAttribute="leading" secondItem="ho1-NN-6pp" secondAttribute="trailing" constant="10" id="lUn-Nc-pQy"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Kyu-Dg-Od0" secondAttribute="trailing" id="lfn-rI-pWl"/>
-                            <constraint firstItem="Kyu-Dg-Od0" firstAttribute="top" secondItem="CC9-d7-fcJ" secondAttribute="bottom" constant="15" id="ozy-JJ-ObP"/>
                             <constraint firstItem="ho1-NN-6pp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="p0L-we-o2y"/>
                             <constraint firstItem="C5J-ze-DYG" firstAttribute="centerY" secondItem="ho1-NN-6pp" secondAttribute="centerY" id="zAG-eE-YQc"/>
+                            <constraint firstItem="GH6-Ni-YIc" firstAttribute="centerY" secondItem="rRu-wv-3e9" secondAttribute="centerY" id="znp-sR-Os9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
